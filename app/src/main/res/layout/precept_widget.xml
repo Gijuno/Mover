@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000"
+    android:padding="@dimen/widget_margin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:orientation="vertical"
+            android:background="@color/colorTransparent">
+
+            <TextView
+                android:id="@+id/text_precept"
+                style="@style/ExtraBoldMiddleSizeTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nanumsquare_l"
+                android:textSize="36sp"
+                android:text="고개 숙이지\n마십시오.\n세상을 똑바로\n정면으로 \n바라보십시오."
+                android:layout_marginBottom="60dp"/>
+
+            <TextView
+                android:id="@+id/text_author"
+                style="@style/ExtraBoldMiddleSizeTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nanumsquare_l"
+                android:textSize="22sp"
+                android:text="- 헬렌 켈러"
+                android:layout_marginBottom="60dp"
+                android:textAlignment="textEnd"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

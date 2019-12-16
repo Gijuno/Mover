@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorTransparent"
+    android:layout_margin="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape_round_trans">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:orientation="vertical"
+                android:background="@color/colorTransparent">
+
+                <TextView
+                    android:id="@+id/text_precept"
+                    style="@style/ExtraBoldMiddleSizeTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumsquare_l"
+                    android:textSize="36sp"
+                    android:text="고개 숙이지\n마십시오.\n세상을 똑바로\n정면으로 \n바라보십시오."
+                    android:layout_marginBottom="60dp"/>
+
+                <TextView
+                    android:id="@+id/text_author"
+                    style="@style/ExtraBoldMiddleSizeTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumsquare_l"
+                    android:textSize="22sp"
+                    android:text="- 헬렌 켈러"
+                    android:layout_marginBottom="60dp"
+                    android:textAlignment="textEnd"/>
+
+                <com.cclean.mover.util.LinedEditText
+                    android:id="@+id/edit_answer"
+                    style="@style/ExtraBoldMiddleSizeTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumsquare_l"
+                    android:textSize="36sp"
+                    android:text="음\n그래야\n겠다"
+                    android:lineSpacingExtra="16dp"
+                    android:textAlignment="textEnd"
+                    android:enabled="false"
+                    android:background="@color/colorTransparent"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

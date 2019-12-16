@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorTransparent">
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="48dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_precept"
+            style="@style/ExtraBoldMiddleSizeTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanumsquare_l"
+            android:textSize="36sp"
+            android:text="고개 숙이지\n마십시오.\n세상을 똑바로\n정면으로 \n바라보십시오."
+            android:layout_marginEnd="60dp"
+            android:layout_marginBottom="60dp" />
+
+        <TextView
+            android:id="@id/text_author"
+            style="@style/ExtraBoldMiddleSizeTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanumsquare_l"
+            android:textSize="22sp"
+            android:text="- 헬렌 켈러"
+            android:layout_marginBottom="60dp"
+            android:textAlignment="textEnd"/>
+
+        <com.cclean.mover.util.LinedEditText
+            android:id="@+id/edit_answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:fontFamily="@font/nanumsquare_l"
+            android:textColor="@color/colorPrimary"
+            android:textSize="36sp"
+            android:lineSpacingExtra="20dp"
+            android:background="@color/colorTransparent"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_add"
+        android:fontFamily="@font/nanumsquare_eb"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:background="@drawable/shape_round_accent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:text="추가"/>
+
+</RelativeLayout>
